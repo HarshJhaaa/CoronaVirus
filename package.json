@@ -2,13 +2,16 @@
   "name": "corona",
   "version": "1.0.0",
   "description": "covid19details",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+        "start": "node app.js"
   },
   "author": "harsh jha",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
 }

@@ -3,6 +3,7 @@ var app = express();
 app.get("/",function(req,res){
 	res.render("index.ejs")
 });
-app.listen("3000",function(){
-	console.log("server is connected")
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
